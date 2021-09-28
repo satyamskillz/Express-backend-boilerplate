@@ -17,5 +17,5 @@
 
 
 ### Contacts
-<a href="https://twitter.com/satyamskillz">CONTACT ME ON TWITTER</a>
+<a href="https://twitter.com/satyamskillz">CONTACT ME ON TWITTER</a></br>
 <a href="https://instagram.com/satyamskillz">CONTACT ME ON INSTAGRAM<a>
