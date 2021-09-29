@@ -4,7 +4,7 @@ module.exports = {
 		client: "pg",
 		useNullAsDefault: true,
 		debug: process.env.NODE_ENV === "development",
-		connection: "postgres://username:password@localhost:5432/example_db",
+		connection: "postgres://satyam:name1234@localhost:5432/example_db",
 		pool: {
 			min: 2,
 			max: 10,
