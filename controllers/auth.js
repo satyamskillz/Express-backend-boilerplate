@@ -4,7 +4,7 @@ const logger = require("../logger");
 // Register user function
 // Input: Name, Username, Email, Password
 // Output: JWToken with refresh token
-export const register = async (req, res) => {
+module.exports.register = async (req, res) => {
 	try {
 		var { fullname, username, email, password } = req.body;
 
@@ -35,7 +35,7 @@ export const register = async (req, res) => {
 // Login user function
 // Input: Email, Password
 // Output: JWToken with refresh token
-export const login = async (res, res) => {
+module.exports.login = async (req, res) => {
 	try {
 		var { email, password } = req.body;
 		// Vailding form data
@@ -55,7 +55,7 @@ export const login = async (res, res) => {
 // Relogin user function
 // Input: JWToken with refresh token
 // Output: new JWToken with refresh token
-export const relogin = async (req, res) => {
+module.exports.relogin = async (req, res) => {
 	try {
 	} catch (error) {
 		logger.error(error);

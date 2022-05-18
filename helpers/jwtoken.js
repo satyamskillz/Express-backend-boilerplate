@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 
-export const createUserTokens = async (id, user) => {
+module.exports.createUserTokens = async (id, user) => {
 	const token = jwt.sign(
 		{
 			data: user,
@@ -25,7 +25,7 @@ export const createUserTokens = async (id, user) => {
 };
 
 // under prgress
-export const refreshUserTokens = async (refreshToken) => {
+module.exports.refreshUserTokens = async (refreshToken) => {
 	let id = -1;
 	try {
 		const decoded = jwt.decode(refreshToken);

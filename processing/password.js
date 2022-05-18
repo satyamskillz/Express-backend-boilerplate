@@ -1,7 +1,7 @@
 const logger = require("../logger");
 const bcrypt = require("bcryptjs");
 
-export const getHassPassword = async (password) => {
+module.exports.getHassPassword = async (password) => {
 	logger.info("Hashing password...");
 	try {
 		return await bcrypt.hash(password, 10);
@@ -10,7 +10,7 @@ export const getHassPassword = async (password) => {
 	}
 };
 
-export const functionName = (userPassword, databasePassword) => {
+module.exports.functionName = async (userPassword, databasePassword) => {
 	logger.info("Comparing passwords...");
 	try {
 		const isMacted = await bcrypt.compare(userPassword, databasePassword);
